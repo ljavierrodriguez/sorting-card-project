@@ -1,0 +1,80 @@
+/*
+\2660 spades => pica
+\2665 hearts => corazon
+\2666 diams => diamante
+\2663 clubs => trebol
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.card {
+    border: .8 solid #000;
+    width: 50px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 3px #000;
+    margin: 5px;
+}
+
+.card .number {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.card .number.spades::before {
+    content: '\2660';
+    text-align: left;
+}
+.card .number.spades::after {
+    content: '\2660';
+    transform: rotate(180deg);
+    text-align: left;
+}
+
+.card .number.clubs::before {
+    content: '\2663';
+    text-align: left;
+}
+.card .number.clubs::after {
+    content: '\2663';
+    transform: rotate(180deg);
+    text-align: left;
+}
+
+.card .number.hearts::before {
+    content: '\2665';
+    color: red;
+    text-align: left;
+}
+.card .number.hearts::after {
+    content: '\2665';
+    color: red;
+    transform: rotate(180deg);
+    text-align: left;
+}
+
+.card .number.diams::before {
+    content: '\2666';
+    color: red;
+    text-align: left;
+}
+.card .number.diams::after {
+    content: '\2666';
+    color: red;
+    transform: rotate(180deg);
+    text-align: left;
+}
