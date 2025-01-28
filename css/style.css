@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
+    background-color: green;
 }
 
 .card {
@@ -35,46 +36,96 @@ body {
     box-sizing: border-box;
 }
 
-.card .number.spades::before {
+.card.spades::before {
     content: '\2660';
     text-align: left;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
-.card .number.spades::after {
+.card.spades::after {
     content: '\2660';
     transform: rotate(180deg);
     text-align: left;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
-.card .number.clubs::before {
+.card.clubs::before {
     content: '\2663';
     text-align: left;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
-.card .number.clubs::after {
+.card.clubs::after {
     content: '\2663';
     transform: rotate(180deg);
     text-align: left;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
-.card .number.hearts::before {
+.card.hearts::before {
     content: '\2665';
-    color: red;
     text-align: left;
-}
-.card .number.hearts::after {
-    content: '\2665';
+    width: 100%;
     color: red;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.card.hearts::after {
+    content: '\2665';
     transform: rotate(180deg);
     text-align: left;
+    width: 100%;
+    color: red;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
-.card .number.diams::before {
+.card.diams::before {
     content: '\2666';
-    color: red;
     text-align: left;
-}
-.card .number.diams::after {
-    content: '\2666';
+    width: 100%;
     color: red;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.card.diams::after {
+    content: '\2666';
     transform: rotate(180deg);
     text-align: left;
+    width: 100%;
+    color: red;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+#formulario {
+    padding: 5px;
+}
+
+#contenedor {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#ordenadas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#ordenadas .contenedor {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
 }
