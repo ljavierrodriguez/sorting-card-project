@@ -1,3 +1,3 @@
 # BASE CARD TEMPLATE
 
-![](img/preview.png)
+![preview](img/preview.png)
